@@ -1,0 +1,25 @@
+.news{
+    .progress__element__date{
+        font-size: rem(14);
+        line-height: 170%;
+        color: #8C8C91;
+
+        @include tablet{
+            font-size: rem(13);
+        }
+    } 
+
+    .progress__element__count{
+        font-size: rem(18);
+        line-height: 170%;
+        color: #323232;
+
+        @include tablet{
+            font-size: rem(16);
+        }
+
+        @include tablet_small{
+            font-size: rem(14);
+        }
+    }
+}

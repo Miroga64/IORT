@@ -1,0 +1,563 @@
+.rooms{
+    width: 100%;
+    display: flex;
+
+
+    &.plan{
+        .rooms__right__list{
+            display: none!important;
+        }
+    }
+
+    &.list{
+        .rooms__right{
+            height: auto!important;
+        }
+        .rooms__filter__submit{
+            margin-top: 3.5rem;
+        }
+        .rooms__right__image{
+            display: none!important;
+        }
+
+        .rooms__filter{
+            padding: 3.075rem 2.25rem 2.25rem;
+            height: rem(470);
+
+            @include tablet{
+                height: rem(500);
+                padding: 3.125rem 1.25rem 2.5rem;
+            }
+
+            @include tablet_small{
+                height: auto;
+            }
+        }
+    }
+
+    @include tablet_small{
+        flex-wrap: wrap;
+        background-color: white;
+        transition: all .3s;
+
+        &.active{
+
+            .rooms__filter{
+                max-height: rem(1200);
+                overflow: visible;
+                background-color: #F2F2F2;
+                padding-bottom: rem(30)!important;
+            }
+        }
+    }
+
+    &__filter{
+        width: rem(352);
+        margin-right: rem(10);
+        padding: rem(70) rem(36) rem(60);
+        background-color: #583374;
+        margin-top: rem(60);
+
+        @include tablet{
+            width: rem(192);
+            padding: rem(50) rem(20) rem(40);
+        }
+
+        @include tablet_small{
+            width: 100%;
+            background-color: transparent;
+            max-height: rem(70);
+            transition: all .3s;
+            padding: rem(0) rem(20)!important;
+            overflow: hidden;
+            margin-right: 0;
+            border: 1px solid #D8D8D8;
+            margin-top: rem(20);
+        }
+
+        &__container{
+            margin-bottom: rem(20);
+
+            @include tablet{
+                margin-bottom: rem(10);
+            }
+
+            @include tablet_small{
+                &:nth-child(2){
+                    margin-top: rem(30);
+                }
+            }
+        }
+
+        &__title{
+            font-size: rem(18);
+            margin-bottom: rem(15);
+            color: white;
+            width: 100%;
+
+            @include tablet{
+                font-size: rem(14);
+                margin-bottom: rem(10);
+            }
+
+            @include tablet_small{
+                line-height: 150%;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #323232;
+            }
+        }
+
+        &__btns{
+            display: flex;
+            width: fit-content;
+            border: 1px solid #D8D8D8;
+
+            @include tablet{
+                flex-wrap: wrap;
+                width: 100%;
+                border: none;
+            }
+        }
+
+        &__submit{
+            width: 100%;
+            height: rem(70);
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #FFFFFF;
+            margin-top: rem(107);
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover{
+                background-color: white;
+                color: #323232;;
+            }
+    
+
+            @include tablet{
+                height: rem(40);
+                margin-top: rem(50);
+            }
+
+            @include tablet_small{
+                border: 1px solid #1A1A24;
+                color: #1A1A24;
+                height: rem(70);
+                margin-top: rem(30);
+                text-transform: uppercase;
+                font-size: rem(14);
+            }
+        }
+
+        &__value{
+            font-size: rem(26);
+            line-height: 135%;
+            color: #323232;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: all .3s;
+            color: #323232;
+            cursor: pointer;
+
+            @include tablet{
+                font-size: rem(18);
+                margin-right: -1px;
+                margin-bottom: -1px;
+                border: 1px solid #D8D8D8;
+            }
+        }
+
+        &__refresh{
+            margin-left: auto;
+            margin-right: auto;
+            font-style: normal;
+            font-size: rem(14);
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            position: relative;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-top: rem(40);
+
+            @include tablet{
+                font-size: rem(12);
+                margin-top: rem(28);
+            }
+
+            @include tablet_small{
+                display: none;
+            }
+
+            &:after{
+                content: '';
+                width: rem(12);
+                height: rem(12);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(/images/filter_cross.svg);
+                position: absolute;
+                left: auto;
+                right: rem(-20)
+            }
+        }
+
+        &__label{
+            width: rem(70);
+            height: rem(50);
+            
+            @include tablet{
+                width: 50%;
+                height: rem(40);
+            }
+
+            @include tablet_small{
+                width: 25%;
+                height: rem(50);
+            }
+        
+            &:not(:last-child){
+                border-right: 1px solid #D8D8D8;
+            }
+
+            input{
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+            }
+
+            input:checked ~ .rooms__filter__value{
+                background-color: #583374;
+                color: white;
+            }
+
+            &.disabled{
+                pointer-events: none;
+                opacity: 0.3;
+            }
+
+        }
+    }
+
+    &__right{
+        flex: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 39.125rem;
+        position: relative;
+        padding-top: rem(60);
+
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+
+            @include tablet_small{
+                justify-content: space-between;
+            }
+        }
+
+        &__element{
+            padding: rem(25);
+            background-color: white;
+            border: 1px solid #D8D8D8;
+            margin-bottom: rem(10);
+            margin-right: rem(10);
+
+            @include tablet{
+                width: calc(50% - 0.625rem);
+            }
+
+            @include tablet_small{
+                width: calc(50% - 0.3125rem);
+                margin-right: 0;
+            }
+
+            @include mobile{
+                width: 100%;
+            }
+        }
+
+        &__preview{
+            width: 100%;
+            height: rem(262);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: rem(20);
+
+            @include tablet{
+                height: rem(200);
+            }
+
+            @include tablet_small{
+                height: rem(150);
+            }
+        }
+
+        &__subtitle{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            margin-bottom: rem(40);
+
+            @include tablet{
+                margin-bottom: rem(30);
+            }
+
+            @include tablet_small{
+                margin-bottom: rem(20);
+            }
+        }
+
+        &__count{
+            font-size: rem(18);
+            color: #323232;
+
+            @include tablet{
+                font-size: rem(15);
+            }
+
+            @include tablet_small{
+                font-size: rem(13);
+            }
+        }
+
+        &__section{
+            font-size: rem(18);
+            line-height: 170%;
+            text-align: right;
+            color: #8C8C91;
+
+            @include tablet{
+                font-size: rem(15);
+            }
+
+            @include tablet_small{
+                font-size: rem(13);
+            }
+        }
+
+        &__info{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+
+            &__title{
+                font-size: rem(14);
+                line-height: 170%;
+                color: #8C8C91;
+                margin-bottom: rem(5);
+
+                @include tablet_small{
+                    font-size: rem(10);
+                }
+            }
+
+            &__value{
+                font-weight: 500;
+                font-size: rem(26);
+                line-height: 135%;
+                color: #323232;
+
+                &.green{
+                    color: #75A856;
+                    margin-left: auto;
+                    text-align: right;
+                }
+
+                @include tablet{
+                    font-size: rem(18);
+                }
+
+                @include tablet_small{
+                    font-size: rem(16);
+                }
+            }
+
+            &__container{
+                &:last-child{
+                    .rooms__right__info__title{
+                        margin-left: auto;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        &__switch{
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 0;
+            display: flex;
+
+            &__link{
+                font-weight: 500;
+                font-size: rem(18);
+                line-height: 170%;
+                color: #8C8C91;
+                padding-right: rem(40);
+                transition: all .3s;
+                background-position: right top;
+                padding-bottom: 3px;
+                background-repeat: no-repeat;
+                position: relative;
+                cursor: pointer;
+
+                &.room_plan{
+                    background-image: url(/images/Category.svg);
+                }
+
+                &.room_list{
+                    background-image: url(/images/Document.svg);
+                }
+
+                &.active{
+                    &:after{
+                        content: '';
+                        width: calc(100% - 2.5rem);
+                        height: 1px;
+                        background-color: #75A856;
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    color: #75A856;
+
+                    @include tablet{
+                        &:after{
+                            width: calc(100% - 1.8rem);
+                        }
+                    }
+
+                    &.room_plan{
+                        background-image: url(/images/Category_green.svg);
+                    }
+
+                    &.room_list{
+                        background-image: url(/images/Document_green.svg);
+                    }
+                }
+
+                &:first-child{
+                    margin-right: rem(50);
+                }
+
+                @include tablet{
+                    font-size: rem(14);
+                    padding-right: rem(30);
+
+                    &:first-child{
+                        margin-right: rem(20);
+                    }
+                }
+
+                @include tablet_small{
+                    background-image: none!important;
+                    padding-right: 0;
+
+                    &.active{
+                        &:after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__image{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            border: 1px solid #D8D8D8;
+        }
+
+        svg{
+            transform: scale(2.1, 2.1);
+
+            path{
+                cursor: pointer;
+            }
+        }
+
+        @include tablet{
+            height: rem(450);
+
+            svg{
+                transform: scale(1.9, 1.9);
+            }
+        }
+
+        @include tablet_small{
+            width: 100%;
+            flex: unset;
+            background-color: white;
+            margin-top: rem(50);
+            height: rem(298);
+            padding-top: rem(40);
+        }
+
+        @include mobile{
+            svg{
+                transform: scale(1.6, 1.6);
+            }
+        }
+
+        @include mobile_middle{
+            height: 14.625rem;
+            svg{
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+
+    &__title{
+        display: none;
+
+        @include tablet_small{
+            display: flex;
+            width: calc(100% + 2.5rem);
+            height: rem(70);
+            text-transform: uppercase;
+            position: relative;
+            padding: rem(26) rem(20);
+            padding-left: 0;
+            margin-left: -1.25rem;
+            margin-right: -1.25rem;
+            padding-left: 1.25rem;
+            cursor: pointer;
+            padding-right: 1.25rem;
+            border-bottom: 1px solid #D8D8D8;
+        }
+    }
+}

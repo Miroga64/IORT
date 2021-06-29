@@ -1,0 +1,162 @@
+.contacts{
+    width: 100%;
+    margin-top: rem(30);
+
+    &__container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        @include tablet_small{
+            flex-wrap: wrap;
+        }
+    }
+
+    &__call{
+        position: absolute;
+        transform: rotate(-90deg);
+        left: auto;
+        right: -1rem;
+        font-size: rem(14);
+        line-height: 150%;
+        cursor: pointer;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        top: calc(50% - 1rem);
+
+        @include tablet{
+            font-size: rem(12);
+            right: -2rem;
+        }
+    }
+
+    &__right{
+        height: rem(700);
+        position: relative;
+        z-index: 1;
+        width: 57%;
+
+        @include tablet{
+            height: rem(500);
+        }
+
+        @include tablet_small{
+            width: 100%;
+            margin-top: rem(26);
+        }
+    }
+
+    &__left{
+        width: 47.22%;
+        padding: rem(110) rem(90) rem(105);
+        background-color: #583374;
+        margin-right: -4.22%;
+        position: relative;
+        z-index: 2;
+
+        @include tablet{
+            padding: 3.875rem 1.625rem 3.5625rem;
+        }
+
+        @include tablet_small{
+            width: 100%;
+        }
+
+        &__block{
+            width: 100%;
+            margin-bottom: rem(50);
+
+            @include tablet{
+                margin-bottom: rem(30);
+            }
+        }
+
+        &__bottom{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-start;
+        }
+
+        &__link{
+            width: rem(40);
+            height: rem(40);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all .3s;
+
+            &.fb{
+                background-image:url(/images/facebook.svg);
+    
+                &:hover{
+                    background-image:url(/images/fb_white.svg);
+                }
+            }
+    
+            &.vk{
+                background-image:url(/images/vk.svg);
+    
+                &:hover{
+                    background-image:url(/images/vk_white.svg);
+                }
+            }
+    
+            &.inst{
+                background-image:url(/images/inst.svg);
+    
+                &:hover{
+                    background-image:url(/images/inst_white.svg);
+                }
+            }
+
+            &:not(:last-child){
+                margin-right: rem(10);
+            }
+
+            @include tablet{
+                width: rem(32);
+                height: rem(32);
+            }
+        } 
+
+        &__title{
+            width: 100%;
+            font-style: normal;
+            font-family: $font_second;
+            font-size: rem(26);
+            line-height: 135%;
+            color: #FFFFFF;
+            margin-bottom: rem(20);
+
+            @include tablet{
+                font-size: rem(20);
+                margin-bottom: rem(14);
+            }
+        }
+
+        &__element{
+            display: block;
+            width: 100%;
+            color: white;
+            font-style: normal;
+            font-weight: normal;
+            font-size: rem(18);
+            line-height: 170%;
+            color: #FFFFFF;
+            margin-bottom: rem(5);
+
+            &:first-child{
+                margin-bottom: rem(10);
+            }
+
+            @include tablet{
+                font-size: rem(13);
+            }
+        }
+    }
+}
