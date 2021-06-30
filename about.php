@@ -1,6 +1,10 @@
 <?include_once './header.php'?>
 <section class="section padding_top padding_bottom">
     <div class="main_container">
+        <div class="breadcrumbs">
+            <a href="#!" class="breadcrumbs__link">Главная</a>
+            <a href="#!" class="breadcrumbs__link">О компании</a>
+        </div>
         <div class="about align_center">
             <div class="about__left big">
                 <h2 class="about__title">О компании</h2>

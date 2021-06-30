@@ -41,7 +41,7 @@
                 </nav>
                 <div class="header__info">
                     <a class="header__tel" href="tel:+7 (347) 293-53-93">+7 (347) 293-53-93</a>
-                    <div class="header__popup">Заказать звонок</div>
+                    <div class="header__popup"  data-popup="popup__call">Заказать звонок</div>
                 </div>   
             </div>
             <a tel="tel:+7 (347) 293-53-93" class="header__mobile__tel"></a>
@@ -60,7 +60,7 @@
         <div class="menu__mobile__bottom">
             <div class="header__info">
                 <a class="header__tel" href="tel:+7 (347) 293-53-93">+7 (347) 293-53-93</a>
-                <div class="header__popup">Заказать звонок</div>
+                <div class="header__popup" data-popup="popup__call">Заказать звонок</div>
             </div>  
         </div>
     </div>
