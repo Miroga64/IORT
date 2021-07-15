@@ -29,12 +29,12 @@
                     <a href="#!" class="header__menu__link">О проекте</a>
                     <a href="#!" class="header__menu__link">Квартиры</a>
                     <a href="#!" class="header__menu__link">Ход строительства</a>
+                    <a href="#!" class="header__menu__link">Как купить</a>
+                    <a href="#!" class="header__menu__link">Контакты</a>
                     <div href="#!" class="header__menu__more">
                         <span>Еще</span>
                         <div class="header__menu__submenu">
-                            <a href="#!" class="header__menu__link">способы покупки</a>
-                            <a href="#!" class="header__menu__link">Новости и акции</a>
-                            <a href="#!" class="header__menu__link">Контакты</a>
+                            <a href="#!" class="header__menu__link">Новости</a>
                             <a href="#!" class="header__menu__link">О компании</a>
                         </div>
                     </div>

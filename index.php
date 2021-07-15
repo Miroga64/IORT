@@ -5,8 +5,12 @@
         <div class="main_block__subtitle">Я очень люблю свой дом. Мне в нем очень уютно и спокойно. В нем живет моя самая любимая, родная и дружная семья....</div>
         <a href="#!" class="main_block__more">Подробнее об объекте</a>
     </div>
+    <a href="#about__left" class="main_block__scroll">
+        <div class="main_block__scroll__text">Подробнее о проекте</div>
+        <div class="main_block__scroll__img"></div>
+    </a>
 </section>
-<section class="section padding_top padding_bottom">
+<section id="about__left" class="section padding_top padding_bottom">
     <div class="main_container">
         <div class="about">
             <div class="about__left">
@@ -162,71 +166,14 @@
     </div>
 </section>
 <section class="section padding_top">
-    <div class="section_part__container">
-        <div class="section_part section_part__right" style="background-color:#F2F2F2;"></div>
-        <div class="main_container">
-            <div class="doc">
-                <div class="doc__left">
-                    <div class="doc__left__title">Документация</div>
-                    <div class="doc__left__list">
-                        <div class="doc__left__element active">
-                            <span>01</span>
-                            <div class="doc__left__text">ОБЩАЯ ДОКУМЕНТАЦИЯ</div>
-                        </div>
-                        <div class="doc__left__element">
-                            <span>02</span>
-                            <div class="doc__left__text">РАЗРЕШЕНИЯ НА ВВОД В ЭКСПЛУАТАЦИЮ</div>
-                        </div>
-                        <div class="doc__left__element">
-                            <span>03</span>
-                            <div class="doc__left__text">ПРОЕКТНЫЕ ДЕКЛАРАЦИИ</div>
-                        </div>
-                        <div class="doc__left__element">
-                            <span>04</span>
-                            <div class="doc__left__text">ДОПОЛНИТЕЛЬНЫЕ СОГЛАШЕНИЯ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="doc__right">
-                    <div class="doc__right__list no_x_croll" id="custom_scroll">
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                        <div class="doc__right__element">
-                            <div class="doc__right__title">01. Расчетный счет ж.д. 11</div>
-                            <div class="doc__right__data">04.08.2020</div>
-                            <a dowload class="doc__right__dowload"></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="main_container">
+        <div class="documentation">
+            <div class="documentation__img"></div>
+            <div class="documentation__info">
+                <div class="documentation__title">Документация</div>
+                <div class="documentation__subtitle">Вся необходимая разрешительная документация находится на сайте <a href="#!">наш.дом.рф</a></div>
             </div>
+            <a href="#!" class="documentation__link"></a>
         </div>
     </div>
 </section>
