@@ -160,7 +160,7 @@
                         <div class="space__right__number">от 2 млн ₽</div>
                     </div>
                 </div>
-                <a href="#!" class="space__right__more">смотреть 2 варианта</a>
+                <a href="#!" class="space__right__more">смотреть варианты</a>
             </div>
         </div>
     </div>

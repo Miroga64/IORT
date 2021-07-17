@@ -9,6 +9,25 @@
     z-index: 2;
     border-bottom: 1px solid  #F2F2F2;
 
+    .footer__social__container{
+        margin-top: 0;
+        margin-right: rem(65);
+    }
+
+    &:not(.transparent){
+        .footer__social{
+            &.fb{
+                background-image: url(/images/fb_black.svg);
+            }
+            &.vk{
+                background-image: url(/images/vk_black.svg);
+            }
+            &.inst{
+                background-image: url(/images/inst_black.svg);
+            }
+        }
+    }
+
     @include tablet{
         padding-top: rem(10);
         padding-bottom: rem(10);
@@ -131,7 +150,7 @@
     &__menu{
         display: flex;
         align-items: center;
-        margin-right: rem(130);
+        margin-right: rem(65);
         align-content: center;
 
         @include tablet{

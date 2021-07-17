@@ -4,7 +4,7 @@
     z-index: 1;
 
     &.padding_top{
-        padding-top: rem(200);
+        padding-top: rem(150);
 
         @include tablet{
             padding-top: rem(120);
@@ -33,7 +33,7 @@
 
 
     &.padding_bottom{
-        padding-bottom: rem(200);
+        padding-bottom: rem(150);
 
         @include tablet{
             padding-bottom: rem(120);

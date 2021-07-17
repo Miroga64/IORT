@@ -30,15 +30,20 @@
                     <a href="#!" class="header__menu__link">Квартиры</a>
                     <a href="#!" class="header__menu__link">Ход строительства</a>
                     <a href="#!" class="header__menu__link">Как купить</a>
-                    <a href="#!" class="header__menu__link">Контакты</a>
                     <div href="#!" class="header__menu__more">
                         <span>Еще</span>
                         <div class="header__menu__submenu">
                             <a href="#!" class="header__menu__link">Новости</a>
                             <a href="#!" class="header__menu__link">О компании</a>
+                            <a href="#!" class="header__menu__link">Контакты</a>
                         </div>
                     </div>
                 </nav>
+                <div class="footer__social__container">
+                    <a href="#!" class="footer__social fb"></a>
+                    <a href="#!" class="footer__social vk"></a>
+                    <a href="#!" class="footer__social inst"></a>
+                </div>
                 <div class="header__info">
                     <a class="header__tel" href="tel:+7 (347) 293-53-93">+7 (347) 293-53-93</a>
                     <div class="header__popup"  data-popup="popup__call">Заказать звонок</div>
