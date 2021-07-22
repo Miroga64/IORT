@@ -12,9 +12,11 @@
         padding: rem(90);
         background-color: #583374;
         margin-top: rem(60);
+        position: relative;
 
         @include tablet{
             padding: rem(40);
+            padding-top: rem(70);
         }
 
         @include tablet_small{
@@ -23,6 +25,7 @@
 
         @include mobile_middle{
             padding: rem(25);
+            padding-top: rem(45);
         }
 
     }
@@ -98,8 +101,8 @@
     }
 
     &__submit{
-        padding: rem(24) rem(40);
-        font-size: rem(14);
+        padding: 1.125rem 1.4rem;
+        font-size: rem(12);
         color: white;
         background-color: transparent;
         border: 1px solid white;
@@ -112,6 +115,17 @@
             color: #323232;;
         }
 
+        &.white{
+            background-color: white;
+            color: #323232;
+            cursor: pointer;
+
+            &:hover{
+                background-color: transparent;
+                color: white;
+            }
+        }
+
 
         @include tablet{
             width: 100%;
@@ -119,6 +133,10 @@
             align-items: center;
             align-content: center;
             justify-content: center;
+
+            &:first-child{
+                margin-bottom: rem(15);
+            }
         }
     }
 
@@ -128,12 +146,19 @@
         text-decoration: underline;
         letter-spacing: 0.3em;
         text-transform: uppercase;
+        position: absolute;
+        top: rem(40);
+        right: rem(30);
 
         @include tablet{
             margin-left: auto;
             margin-right: auto;
-            margin-top: rem(20);
+            font-size: rem(12);
+            top: rem(26);
+            right: rem(20);
         }
+
+      
     }
 
     &__right{

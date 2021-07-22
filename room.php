@@ -8,6 +8,7 @@
         <h1 class="page__title">Квартира</h1>
         <div class="page__section room">
             <form class="room__left">
+                <a href="#!" class="room__print">Распечатать</a>
                 <div class="room__title">3 комнатная квартира</div>
                 <div class="room__info">
                     <div class="room__info__container">
@@ -30,8 +31,8 @@
                     </div>
                 </div>
                 <div class="room__bottom">
-                    <input type="submit" class="room__submit" value="Забронировать">
-                    <a href="#!" class="room__print">Распечатать pdf</a>
+                    <input type="submit" class="room__submit white" value="Забронировать">
+                    <div class="room__submit ">Отправить по почте</div>
                 </div>
             </form>
             <div class="room__right">
