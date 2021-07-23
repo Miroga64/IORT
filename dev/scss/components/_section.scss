@@ -6,12 +6,16 @@
     &.padding_top{
         padding-top: rem(150);
 
+        @include desktop{
+            padding-top: rem(100);
+        }
+
         @include tablet{
-            padding-top: rem(120);
+            padding-top: rem(80);
         }
 
         @include tablet_small{
-            padding-top: rem(70);
+            padding-top: rem(50);
 
             &:first-child{
                 padding-top: 9.5rem;
@@ -35,12 +39,16 @@
     &.padding_bottom{
         padding-bottom: rem(150);
 
+        @include desktop{
+            padding-bottom: rem(100);
+        }
+
         @include tablet{
-            padding-bottom: rem(120);
+            padding-bottom: rem(80);
         }
 
         @include tablet_small{
-            padding-top: rem(70);
+            padding-top: rem(50);
         }
     }
     
